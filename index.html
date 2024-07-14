@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(0deg, rgba(172,109,206,1) 0%, rgba(202,159,225,1) 42%, rgba(87,220,176,1) 100%, rgba(85,242,145,1) 100%);
+        }
+        .box{
+            display: flex;
+            width: 70%;
+            
+        
+            
+            margin: auto;
+        }
+        .box>div>img{
+            width: 300px;
+        }
+        @keyframes slide-in {
+      0% {
+        transform: translateX(-50%);
+      }
+      50% {
+        transform: translateX(25%);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateX(300%);
+        opacity: 1;
+      }
+    }
+    @keyframes slide-out {
+      0% {
+        transform: translateX(200%);
+      }
+      50% {
+        transform: translateX(25%);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateX(-100%);
+        opacity: 1;
+      }
+    }
+    .tom{
+        animation: slide-in 2s ease-out infinite;
+    }
+    .jery{
+        animation: slide-out 2s ease-in infinite;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="tom ">
+            <img src="https://i.pinimg.com/originals/03/a4/d5/03a4d55748dfefa852df76b085708c0a.png" alt="">
+        </div>
+        <div class="jery">
+            <img src="https://pngimg.com/d/tom_and_jerry_PNG58.png" alt="">
+        </div>
+    </div>
+   
+    
+</body>
+</html>
